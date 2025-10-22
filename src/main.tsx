@@ -7,6 +7,7 @@ import ContactPage from "./pages/contact/index.tsx";
 import Layout from "./Layout.tsx";
 import AboutPage from "./pages/about/index.tsx";
 import ErrorPage from "./components/ErrorPage.tsx";
+import { FormDemo } from "./pages/FormDemo/FormDemo.tsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
       {
         path: "about",
         Component: AboutPage,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "form-demo",
+        Component: FormDemo,
         errorElement: <ErrorPage />,
       },
     ],
