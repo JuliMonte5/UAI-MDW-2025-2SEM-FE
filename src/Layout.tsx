@@ -32,6 +32,12 @@ const Layout = () => {
               >
                 Form Demo
               </Link>
+              <Link
+                className="px-3 py-2 text-gray-900 relative cursor-pointer  after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
+                to="/redux-demo"
+              >
+                Redux Demo
+              </Link>
               {/* <a className="px-3 py-2 text-black relative cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full" href="/">Home</a>
               <a className="px-3 py-2 text-gray-900 relative cursor-pointer  after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full" href="/contact">Contact</a>
               <a className="px-3 py-2 text-gray-900 relative cursor-pointer  after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full" href="/about">About</a> */}

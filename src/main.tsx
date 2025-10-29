@@ -8,6 +8,9 @@ import Layout from "./Layout.tsx";
 import AboutPage from "./pages/about/index.tsx";
 import ErrorPage from "./components/ErrorPage.tsx";
 import { FormDemo } from "./pages/FormDemo/FormDemo.tsx";
+import { Provider } from "react-redux";
+import { store } from "./store/store.ts";
+import ReduxDemoPage from "./pages/redux-demo/index.tsx";
 
 const router = createBrowserRouter([
   {
@@ -34,10 +37,17 @@ const router = createBrowserRouter([
         Component: FormDemo,
         errorElement: <ErrorPage />,
       },
+      {
+        path: "redux-demo",
+        Component: ReduxDemoPage,
+        errorElement: <ErrorPage />,
+      },
     ],
   },
 ]);
 
 createRoot(document.getElementById("root")!).render(
-  <RouterProvider router={router} />
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
 );
