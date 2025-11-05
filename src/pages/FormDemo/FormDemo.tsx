@@ -1,7 +1,6 @@
 import { useForm } from "react-hook-form";
 import { joiResolver } from "@hookform/resolvers/joi";
 import Joi from "joi";
-import { useState } from "react";
 
 interface FormData {
   firstName: string;
@@ -26,7 +25,7 @@ export const FormDemo = () => {
   });
 
   const onSubmit = (data: FormData) => {
-    
+    console.log("🚀 ~ onSubmit ~ data:", data);
   };
 
   return (
