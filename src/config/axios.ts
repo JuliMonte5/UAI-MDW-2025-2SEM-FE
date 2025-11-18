@@ -13,8 +13,6 @@ const firebaseAxios = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL
 });
 
-console.log('testing deploy');
-
 firebaseAxios.interceptors.request.use(
   async (config) => {
     const token = localStorage.getItem("token")?.replaceAll('""', "");
